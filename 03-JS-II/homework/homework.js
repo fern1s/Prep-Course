@@ -158,11 +158,18 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  for (var i=1 ; i < 11 ; i++) {
-    console.log(6 * i)
-  }
-} //NO SE LO QUE ES UN ARRAY TODAVIA, LITERAL ES LA SIGUIENTE UNIDAD ESO
+  //Escribe tu código aquí  ASI LO HICE YO PERO LA IDEA ERA NO ESCRIBIR TODA LA TABLA: 
+ // var tabla = [0,6,12,18,24,30,36,42,48,54,60]
+ // for (let i = 0; i < tabla.length; i++) {
+ //  console.log("6 * " + i + " = " + tabla[i])
+ //} SOLUCION BIEN HECHA:
+ 
+ var tablita = []
+ for (i = 0; i < 11; i++) {
+   tablita.push(6*i)
+ }
+ return tablita;
+} 
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
